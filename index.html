@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/f897af92f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/main.css">
+    <title>BucketList</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">Bucket-List</h1>
+            <form autocomplete="off" class="search">
+                <input type="text" class="form-control m-auto" type="text" name="search"
+                    placeholder="&#xF002; search for tasks..." style="font-family:Arial, FontAwesome"
+                    onfocus="this.placeholder = '&#xF002;'">
+            </form>
+        </header>
+
+        <ul class="list-group todos ms-auto text-light">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>play mario</span>
+                <span class="delete">&#10008;</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>make the code</span>
+                <span class="delete">&#10008;</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Learn javascript</span>
+                <span class="delete">&#10008;</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Sleep on time</span>
+                <span class="delete">&#10008;</span>
+            </li>
+        </ul>
+
+        <form autocomplete="off" class="add text-center my-4">
+            <label class="text-light"> Add a new task...</label>
+
+            <input class="form-control m-auto" type="text" name="add" placeholder="&#43; add new tasks..."
+                style="font-family:Arial, FontAwesome" onfocus="this.placeholder = '&#43;'" />
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+        </form>
+
+
+    </div>
+
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
